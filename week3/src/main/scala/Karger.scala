@@ -1,4 +1,3 @@
-import scala.collection.immutable.HashMap
 import scala.io.Source
 
 /**
@@ -101,7 +100,7 @@ object Karger {
     println("Number of iteration " + numIterate)
 
     // run the algorithm numIterate times and determine the minimum cut
-    (1 to numIterate).foldLeft(Int.MaxValue)((min, iter) => {
+    (1 to numIterate).foldLeft(Int.MaxValue)((min, _) => {
 //      println(s"iteration number : $iter")
       val res = iterate()
       if (res < min) res
