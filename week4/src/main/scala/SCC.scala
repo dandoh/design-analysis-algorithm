@@ -27,6 +27,7 @@ object SCC {
 
       DirectedGraph(V, adjReverse)
     }
+
   }
 
   /**
