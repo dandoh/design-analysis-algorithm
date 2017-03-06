@@ -42,10 +42,17 @@ object Dijkstra {
       }
     }
 
-    shortestPath.tail
+    shortestPath
   }
 
-  def main(args: Array[String]) {
+  def main(args: Array[String]): Unit = {
+    val G = buildGraph("dijkstraData.txt", 200)
+    val res = compute(G, 1)
+    println(res(1))
+    val list = List(7,37,59,82,99,115,133,165,188,197)
+    val p = res.zipWithIndex.filter{case (_, id) => list.contains(id)}.map {case (r, _) => r}
+    println(p mkString ",")
+
   }
 
 

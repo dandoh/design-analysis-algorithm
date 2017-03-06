@@ -145,8 +145,9 @@ object SCC {
   }
 
   def main(args: Array[String]): Unit = {
-
-
+    val G = buildGraph(875714, "SCC.txt")
+    val res = topSCC(computeSCC(G), 5)
+    println(res mkString ", ")
   }
 
 

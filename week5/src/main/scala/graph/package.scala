@@ -26,7 +26,7 @@ package object graph {
       if (x != u && x != v) throw new IllegalArgumentException
 
       if (x == u) v
-      else v
+      else u
     }
   }
 

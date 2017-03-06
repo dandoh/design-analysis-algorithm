@@ -12,10 +12,6 @@ object Inversion {
     }.toArray
 
     println(sortAndCountInversion(input, 0, input.length))
-
-
-    println(input.mkString(", "))
-//    println(input.length)
   }
 
   val threshold = 4
